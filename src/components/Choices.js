@@ -6,11 +6,11 @@ function Choices({ gameItems, handleGameItemChange }) {
     <div>
       <h2 className="choices-title">Choices</h2>
       <div className="choices">
-        {gameItems.map((gameItem) => (
+        {gameItems?.map((gameItem) => (
           <ChoiceCard
             key={gameItem.id}
             gameItem={gameItem}
-            handleGameItemChange={"Your code here"}
+            handleGameItemChange={handleGameItemChange}
           />
         ))}
       </div>
